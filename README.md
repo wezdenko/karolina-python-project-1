@@ -23,7 +23,8 @@ Clients of this application are other analysists which would use this tool from 
 
 ### Non-functional requirements
 - Program always runs correctly as long the input and json file is correct.
-- Program uses python in version 3.12 without external libraries (only build-in libraries can be used).
+- Program uses python in version 3.12.
+- Only modules from a [standard library](https://docs.python.org/3.12/library/index.html) can be used.
 - The program is easy to set-up and run (documentation for that is provided).
 - Program handles json files up to 5MB in size.
 - Program is well maintained in this repository.
