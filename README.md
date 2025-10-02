@@ -1,8 +1,9 @@
-# karolina-python-project-1
+# Messenger annalizer 
 
 ## Business description
-The purpose of this project is to build a tool that enables users to perform a visual analysis of data from messanger.
-Clients of this application are other techinical users which would use this tool from a command line.
+Messenger provides a possibility to generate json files which contain the whole conversation history.
+The purpose of this project is to build a tool that enables users to perform a visual analysis of this data from messanger.
+Clients of this application are other analysists which would use this tool from a command line.
 
 ## Project requirements
 
@@ -21,4 +22,8 @@ Clients of this application are other techinical users which would use this tool
 - User can exit the program at any time using Ctrl+C.
 
 ### Non-functional requirements
-...
+- Program always runs correctly as long the input and json file is correct.
+- Program uses python in version 3.12 without external libraries (only build-in libraries can be used).
+- The program is easy to set-up and run (documentation for that is provided).
+- Program handles json files up to 5MB in size.
+- Program is well maintained in this repository.
