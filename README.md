@@ -9,8 +9,8 @@ Clients of this application are other analysists which would use this tool from 
 
 ### Functional requirements
 - Script 'run.sh' is run from a command line that starts the application.
-- The application is a command line program, it means that inputs are provided in console and output are also displayed in console. 
-- User provides a path to a json file in the following: [messages.schema.json](https://github.com/wezdenko/karolina-python-project-1/blob/main/message.schema.json)
+- The application is a command line program, it means that inputs are provided in a console and outputs are also displayed in a console. 
+- User provides a path to a json file with the following schema: [messages.schema.json](https://github.com/wezdenko/karolina-python-project-1/blob/main/message.schema.json) (see [JsonSchema](https://json-schema.org/docs#welcome))
 - User can perform 3 operations:
   - Count all messages in the given period (accepted date format: `YYYY-MM-DD`) and display the number.
   - Count number of messages sent by each user in the given period (accepted date format: `YYYY-MM-DD`) and display the number. Results should be ordered in a
@@ -23,9 +23,9 @@ Clients of this application are other analysists which would use this tool from 
 - User can exit the program at any time using Ctrl+C.
 
 ### Non-functional requirements
-- Program always runs correctly as long the input and json file is correct.
+- Program always runs correctly as long the input and json file are correct.
 - Program uses python in version 3.12.
 - Only modules from a [standard library](https://docs.python.org/3.12/library/index.html) can be used.
-- The program is easy to set-up and run (documentation for that is provided).
+- The program is easy to set-up and run.
 - Program handles json files up to 5MB in size.
 - Program is well maintained in this repository.
