@@ -9,7 +9,7 @@ Clients of this application are other analysists which would use this tool from 
 
 ### Functional requirements
 - Script is run from a command line that starts the application.
-- User provides a path to a json file in the following format...
+- User provides a path to a json file in the following: [messages.schema.json](https://github.com/wezdenko/karolina-python-project-1/blob/main/messages.schema.json)
 - User can perform 3 operations:
   - Count all messages in the given period (accepted date format: `YYYY-MM-DD`) and display the number.
   - Count number of messages sent by each user in the given period (accepted date format: `YYYY-MM-DD`) and display the number. Results should be ordered in a

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Messenger Conversation",
+  "type": "object",
+  "properties": {
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" }
+        },
+        "required": ["name"],
+        "additionalProperties": false
+      }
+    },
+    "messages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sender_name": { "type": "string" },
+          "timestamp_ms": { "type": "integer" },
+          "content": { "type": "string" },
+          "photos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "uri": { "type": "string" },
+                "creation_timestamp": { "type": "integer" }
+              },
+              "required": ["uri", "creation_timestamp"],
+              "additionalProperties": false
+            }
+          },
+          "reactions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reaction": { "type": "string" },
+                "actor": { "type": "string" }
+              },
+              "required": ["reaction", "actor"],
+              "additionalProperties": false
+            }
+          },
+          "is_geoblocked_for_viewer": { "type": "boolean" }
+        },
+        "required": ["sender_name", "timestamp_ms", "is_geoblocked_for_viewer"],
+        "additionalProperties": false
+      }
+    },
+    "title": { "type": "string" },
+    "is_still_participant": { "type": "boolean" },
+    "thread_path": { "type": "string" },
+    "magic_words": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": [
+    "participants",
+    "messages",
+    "title",
+    "is_still_participant",
+    "thread_path",
+    "magic_words"
+  ],
+  "additionalProperties": false
+}
