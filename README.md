@@ -8,7 +8,8 @@ Clients of this application are other analysists which would use this tool from 
 ## Project requirements
 
 ### Functional requirements
-- Script is run from a command line that starts the application.
+- Script 'run.sh' is run from a command line that starts the application.
+- The application is a command line program, it means that inputs are provided in console and output are also displayed in console. 
 - User provides a path to a json file in the following: [messages.schema.json](https://github.com/wezdenko/karolina-python-project-1/blob/main/message.schema.json)
 - User can perform 3 operations:
   - Count all messages in the given period (accepted date format: `YYYY-MM-DD`) and display the number.
